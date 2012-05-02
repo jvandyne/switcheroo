@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Test Page</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="jquery.switcheroo.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('.switcheroo').switcheroo();
+
+            $('.switcheroo-ddl').switcheroo({type: 'dropdownlist', items: ['James', 'Jen', 'Belle'] });
+        });
+    </script>
+</head>
+<body>
+    <div id="editor-panel">
+        <label class="switcheroo">Some kind of wonderful.</label>
+    </div>
+    <div id="ddl-panel">
+        <label class="switcheroo-ddl">James</label>
+    </div>
+</body>
+</html>
